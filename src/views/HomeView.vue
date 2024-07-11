@@ -91,7 +91,7 @@ export default {
            axios.defaults.headers.token = `${getCookie(
             'token'
           )}`;
-          this.$router.push(`/blogs`);
+          this.$router.push(`/blogcategories`);
         } else {
           toast(
             res?.data?.message ||

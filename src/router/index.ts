@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 const HomeView = () => import('@/views/HomeView.vue');
 
-import RegisterView from '../views/RegisterView.vue'
-import CategoriesView from '../views/CategoriesView.vue'
-import BlogsView from '../views/BlogsView.vue'
-import BlogDetailsView from '../views/BlogDetailsView.vue'
+import RegisterView from '@/views/RegisterView.vue'
+import CategoriesView from '@/views/CategoriesView.vue'
+import BlogsView from '@/views/BlogsView.vue'
+import BlogDetailsView from '@/views/BlogDetailsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
