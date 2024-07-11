@@ -9,7 +9,7 @@
           <div data-v-7a7a37b1="" class="wrapper">
             <nav data-v-7a7a37b1="">
               <div v-for="item in categories">
-                <router-link :to="`blogs/`+item.id">
+                <router-link :to="{name: 'blogs', params: {cat_id: item.id}}"   >
                   {{ item.title}}
                 </router-link>
               </div>
