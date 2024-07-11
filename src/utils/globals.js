@@ -1,0 +1,1 @@
+export const baseURL = 'http://localhost/task/task/index.php?r='

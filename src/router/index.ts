@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import RegisterView from '../views/RegisterView.vue'
+import CategoriesView from '../views/CategoriesView.vue'
+import BlogsView from '../views/BlogsView.vue'
+import BlogDetailsView from '../views/BlogDetailsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,12 +14,33 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/register',
+      name: 'register',
+      component: RegisterView
+    },
+    {
+      path: '/blogcategories',
+      name: 'blogcategories',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: CategoriesView
+    },
+    {
+      path: '/blogs/:cat_id',
+      name: 'blogs',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: BlogsView
+    },
+    {
+      path: '/blog/:blog_id',
+      name: 'blogdetails',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: BlogDetailsView
     }
   ]
 })

@@ -1,0 +1,28 @@
+// @forward 'vuetify/styles/elements/index';
+// @forward 'vuetify/styles/generic/animations';
+// @forward 'vuetify/styles/generic/colors';
+// // @forward 'vuetify/styles/generic/reset';
+// @forward 'vuetify/styles/generic/transitions';
+// @forward 'vuetify/styles/generic/rtl';
+
+
+.v-text-field .v-field{
+    --v-disabled-opacity: .8!important;
+    background-color: white;
+}
+.v-field::placeholder{
+    font-size: 10px!important;
+}
+.v-combobox .v-field .v-field__input > input{
+    padding: 0;
+}
+.v-label.v-field-label{
+    @apply rtl:right-0 ltr:left-0 text-sm;
+    font-weight: 200!important;
+}
+.v-input__details{
+    // display: none!important;
+}
+.v-messages__message{
+    text-align: center!important;
+}
