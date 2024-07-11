@@ -30,6 +30,10 @@
           <ButtonLoader v-else />
         </button>
       </form>
+
+      <router-link to="register">
+        Register Here
+      </router-link>
     </div>
   </div>
 </template>
@@ -53,7 +57,7 @@ export default {
       form: {
 
         password: null,
-        email: null,
+        username: null,
       },
       isLoading: false,
     };
